@@ -4,7 +4,7 @@ import Link from "next/link"
 
 function Footer() {
   return (
-    <footer className="bg-gray-100 text-gray-800 pt-16 pb-8 relative overflow-hidden">
+    <footer className="bg-gray-100 text-gray-800 pt-16 pb-8 relative overflow-hidden ymr">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-4 gap-8">
             {/* Logo + Social */}
