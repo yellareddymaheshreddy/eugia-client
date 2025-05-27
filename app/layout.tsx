@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     siteName: 'Eugia Pharmaceuticals',
     images: [
       {
-        url: 'https://eugia.mahs.me/Logo.png',
+        url: 'https://eugia.mahs.me/image.png',
         width: 1200,
         height: 630,
         alt: 'Eugia Pharmaceuticals',
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Eugia - Global Pharmaceutical Company',
     description: 'Eugia is a global pharmaceutical company that develops, manufactures, and markets a wide range of generic and branded pharmaceuticals.',
-    images: ['https://eugia.mahs.me/Logo.png'],
+    images: ['https://eugia.mahs.me/image.png'],
   },
   robots: {
     index: true,
@@ -53,13 +53,7 @@ export const metadata: Metadata = {
     icon: '/Logo.png',
     apple: '/Logo.png',
   },
-  manifest: '/manifest.json',
-  themeColor: '#6B46C1',
-  viewport: {
-    width: 'device-width',
-    initialScale: 1,
-    maximumScale: 1,
-  },
+  
 };
 export default function RootLayout({
   children,

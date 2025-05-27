@@ -1,10 +1,17 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
-  //t3.ftcdn.net
   images: {
-    domains: ["t3.ftcdn.net","images.pexels.com"],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 't3.ftcdn.net',
+      },
+      {
+        protocol: 'https',
+        hostname: 'images.pexels.com',
+      },
+    ],
   },
 };
 
