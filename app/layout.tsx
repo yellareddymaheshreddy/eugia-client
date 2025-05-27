@@ -15,8 +15,52 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Eugia -Dev Maheshreddy",
   description: "Eugia is a global pharmaceutical company that develops, manufactures, and markets a wide range of generic and branded pharmaceuticals.",
+  keywords: "Pharmaceutical, Healthcare, Generic Medicines, Branded Pharmaceuticals, Global Healthcare, Medical Innovation",
+  openGraph: {
+    type: 'website',
+    locale: 'en_US',
+    url: 'https://eugia.com',
+    title: 'Eugia - Global Pharmaceutical Company',
+    description: 'Eugia is a global pharmaceutical company that develops, manufactures, and markets a wide range of generic and branded pharmaceuticals.',
+    siteName: 'Eugia Pharmaceuticals',
+    images: [
+      {
+        url: 'https://eugia.mahs.me/Logo.png',
+        width: 1200,
+        height: 630,
+        alt: 'Eugia Pharmaceuticals',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Eugia - Global Pharmaceutical Company',
+    description: 'Eugia is a global pharmaceutical company that develops, manufactures, and markets a wide range of generic and branded pharmaceuticals.',
+    images: ['https://eugia.mahs.me/Logo.png'],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  icons: {
+    icon: '/Logo.png',
+    apple: '/Logo.png',
+  },
+  manifest: '/manifest.json',
+  themeColor: '#6B46C1',
+  viewport: {
+    width: 'device-width',
+    initialScale: 1,
+    maximumScale: 1,
+  },
 };
-
 export default function RootLayout({
   children,
 }: Readonly<{
