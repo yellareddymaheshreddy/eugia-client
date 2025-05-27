@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Germs from "@/public/assets/germs.jpg"
 
 function Portfolio() {
   return (
@@ -22,8 +23,9 @@ function Portfolio() {
             <div className="relative">
               <div className="rounded-r-3xl overflow-hidden shadow-2xl">
                 <Image
-                  src="https://t3.ftcdn.net/jpg/13/07/88/96/360_F_1307889681_neXsRSujd20DbT2TFdxgXL8KYwBNnQBv.jpg"
+                  src={Germs}
                   alt="Portfolio"
+                  placeholder="blur"
                   width={600}
                   height={400}
                   className="w-full h-auto object-cover"

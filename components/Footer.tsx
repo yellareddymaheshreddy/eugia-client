@@ -2,9 +2,22 @@ import {Facebook, Linkedin, Instagram, ArrowRight} from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 
+const quickLinks = [
+  { name: "Home", href: "#" },
+  { name: "About Us", href: "#" },
+  { name: "Investors", href: "#" },
+  { name: "Portfolio", href: "#" },
+  { name: "Privacy Policy", href: "#" },
+];
+const getInTouchLinks = [
+  { name: "Contact Us", href: "#" },
+  { name: "Careers", href: "#" },
+  { name: "Reports & Policies", href: "#" },
+];
+
 function Footer() {
   return (
-    <footer className="bg-gray-100 text-gray-800 pt-16 pb-8 relative overflow-hidden ymr">
+    <footer className="bg-purple-300 text-gray-800 pt-16 pb-8 relative overflow-hidden ymr">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-4 gap-8">
             {/* Logo + Social */}
@@ -33,31 +46,13 @@ function Footer() {
             <div>
               <h6 className="font-bold mb-4">Quick Links</h6>
               <ul className="space-y-2">
-                <li>
-                  <Link href="#" className="text-gray-600 hover:text-gray-800">
-                    Home
+                {quickLinks.map((link) => (
+                  <li key={link.name}>
+                  <Link href="#" className="text-gray-600 hover:text-gray-800" >
+                    {link.name}
                   </Link>
                 </li>
-                <li>
-                  <Link href="#" className="text-gray-600 hover:text-gray-800">
-                    About Us
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="text-gray-600 hover:text-gray-800">
-                    Investors
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="text-gray-600 hover:text-gray-800">
-                    Portfolio
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="text-gray-600 hover:text-gray-800">
-                    Privacy Policy
-                  </Link>
-                </li>
+                ))}
               </ul>
             </div>
 
@@ -65,21 +60,13 @@ function Footer() {
             <div>
               <h6 className="font-bold mb-4">Get in touch</h6>
               <ul className="space-y-2">
-                <li>
+                {getInTouchLinks.map((link) => (
+                  <li key={link.name}>
                   <Link href="#" className="text-gray-600 hover:text-gray-800">
-                    Contact Us
+                    {link.name}
                   </Link>
-                </li>
-                <li>
-                  <Link href="#" className="text-gray-600 hover:text-gray-800">
-                    Careers
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="text-gray-600 hover:text-gray-800">
-                    Reports & Policies
-                  </Link>
-                </li>
+                </li>))}
+                
               </ul>
             </div>
 
@@ -105,12 +92,12 @@ function Footer() {
 
           {/* Bottom Line */}
           <div className="border-t border-gray-300 pt-6 mt-12 text-center text-gray-600 text-sm">
-            <p>&copy; 2025 Eugia Pharma. All Rights Reserved.</p>
+            <p>&copy; 2025 Eugia Pharma. All Rights Reserved.</p><Link href="https://mahs.me" className="text-purple-600 hover:text-purple-800 ml-2 text-xs">By Your Dev</Link>
           </div>
         </div>
 
         {/* Decorative Background */}
-        <div className="absolute top-0 right-0 h-full w-48 bg-gradient-to-br from-purple-700 to-purple-900 rounded-tl-[60px] hidden md:block opacity-20"></div>
+        <div className="absolute top-0 right-0 h-full w-48 bg-gradient-to-br from-purple-800 to-purple-900 rounded-tl-[60px] hidden md:block opacity-20"></div>
       </footer>
   )
 }

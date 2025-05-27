@@ -6,7 +6,7 @@ function CoreValues() {
         className="py-24 relative"
         style={{
           backgroundImage:
-            "url('https://images.squarespace-cdn.com/content/v1/57b7a2f937c581dad578f863/7579a534-bc8f-49f2-901b-07690221aead/Firefly+chaplin,+carer+hand+holding+elder+hand+woman+in+hospice+care.+Philanthropy+kindness+to+disab+(1).jpg')",
+            "url('/assets/corevalues.jpg')",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}

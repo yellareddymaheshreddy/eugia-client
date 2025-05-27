@@ -40,13 +40,14 @@ function Header() {
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center">
+              <Link href="/" className="flex items-center">
               <Image
                 src="/Logo.png"
                 alt="Eugia Logo"
                 width={120}
                 height={40}
                 className="h-10 w-auto filter invert"
-              />
+              /></Link>
             </div>
 
             <div className="hidden lg:flex items-center space-x-8">

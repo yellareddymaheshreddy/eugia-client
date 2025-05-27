@@ -6,7 +6,7 @@ function Hero() {
           className="absolute inset-0 bg-cover bg-center"
           style={{
             backgroundImage:
-              "url('https://t3.ftcdn.net/jpg/11/15/66/28/360_F_1115662820_7YcsP1O5tBYwjg9RFFhgH0DNbXzF0ETw.jpg')",
+              "url('/assets/microscope.jpg')",
           }}
         />
         <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent" />
