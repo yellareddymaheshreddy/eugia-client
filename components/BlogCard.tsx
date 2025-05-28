@@ -4,7 +4,7 @@ import Link from "next/link"
 
     function BlogCard({link="#",title,discription,date,image}:{link:string,title:string,discription:string,date:string,image:string}) {
   return (
-    <div className="bg-white rounded-2xl shadow-lg overflow-hidden hover:transform hover:-translate-y-2 transition-all duration-300">
+    <div className="bg-white rounded-2xl shadow-lg overflow-hidden hover:transform hover:-translate-y-2 transition-all duration-300 max-w-96">
                         <div className="h-48 overflow-hidden">
                             <Image
                                 src={image}

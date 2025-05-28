@@ -4,7 +4,7 @@ import Germs from "@/public/assets/germs.jpg"
 function Portfolio() {
   return (
     <section className="py-20 bg-white">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-4 md:px-14">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <h4 className="text-red-500 text-sm font-bold uppercase tracking-wide mb-4">OUR PORTFOLIO</h4>

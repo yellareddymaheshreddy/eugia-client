@@ -3,7 +3,7 @@ import BlogCard from "./BlogCard"
 function Blogs() {
     return (
         <section className="py-20 bg-white">
-            <div className="container mx-auto px-4">
+            <div className="container mx-auto px-4 md:px-14">
                 <div className="text-center mb-12">
                     <h2 className="text-black text-3xl lg:text-4xl font-bold mb-4">BLOGS & ARTICLES</h2>
                     <div className="w-20 h-1 bg-purple-600 mx-auto mb-6"></div>
@@ -12,7 +12,7 @@ function Blogs() {
                     </p>
                 </div>
 
-                <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-8">
+                <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-8 place-content-center">
                     
                     <BlogCard link="#" title="How Services Can Ease Your Pain" discription="Customer-centered software design insights can help improve service delivery and reduce operational costs." date="April, 2023" image="https://images.pexels.com/photos/2280551/pexels-photo-2280551.jpeg" />
 

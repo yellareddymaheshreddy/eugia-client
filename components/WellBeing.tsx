@@ -2,7 +2,7 @@
 function WellBeing() {
   return (
     <section className="py-20 bg-white text-center">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-4 md:px-14">
           <h2 className="text-3xl lg:text-4xl font-bold text-black mb-6">
             Envisioning a State of <span className="text-red-500">GLOBAL WELL-BEING</span>
           </h2>

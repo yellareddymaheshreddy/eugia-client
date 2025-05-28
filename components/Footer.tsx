@@ -17,8 +17,8 @@ const getInTouchLinks = [
 
 function Footer() {
   return (
-    <footer className="bg-purple-300 text-gray-800 pt-16 pb-8 relative overflow-hidden ymr">
-        <div className="container mx-auto px-4">
+    <footer className="bg-gradient-to-br from-purple-500 to-purple-300 text-gray-800 pt-16 pb-8 relative overflow-hidden ymr">
+        <div className="container mx-auto px-4 md:px-14">
           <div className="grid md:grid-cols-4 gap-8">
             {/* Logo + Social */}
             <div>
@@ -98,6 +98,7 @@ function Footer() {
 
         {/* Decorative Background */}
         <div className="absolute top-0 right-0 h-full w-48 bg-gradient-to-br from-purple-800 to-purple-900 rounded-tl-[60px] hidden md:block opacity-20"></div>
+        <div className="absolute top-0 right-0 h-180 w-90 bg-white/80 rounded-l-full hidden md:block opacity-20"></div>
       </footer>
   )
 }
